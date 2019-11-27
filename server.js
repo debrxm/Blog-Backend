@@ -36,7 +36,7 @@ app.post('/comment', (req, res) => {
 });
 
 module.exports = app;
-
-app.listen(9000, () => {
-    console.log('Example app listening on port 9000!');
+const port = "https://jimoh-blog-backend.herokuapp.com"
+app.listen(port, () => {
+    console.log(`App listening on port ${port}`);
 });
